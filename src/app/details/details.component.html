@@ -1,0 +1,16 @@
+<div class="card mb-3">
+    <div class="row g-0">
+        <div class="col-3">
+            <img src="{{dish.img}}" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title">{{dish.name}}</h5>
+                <p class="card-text">{{dish.description}}</p>
+                <hr>
+                <p>{{dish.price|currency:'EUR':true}}</p>
+                <button type="button" class="btn  btn-success mb-3" (click)="addToCart()" (click)="countClickt()">Order</button>
+            </div>
+        </div>
+    </div>
+</div>

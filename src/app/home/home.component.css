@@ -1,0 +1,52 @@
+.card-img {
+    min-height: 50vh;
+    max-height: 50vh;
+}
+
+.card-img-overlay {
+    background-color: rgba(0, 0, 0, 0.621);
+}
+
+.nameResturant {
+    margin-top: 7rem;
+    font-family: 'Rouge Script', cursive;
+    font-size: 5rem;
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+}
+
+.paragraph {
+    font-weight: bolder;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 2px rgb(1, 1, 1);
+}
+
+.header {
+    font-weight: bolder;
+    font-size: 5rem;
+    font-family: 'Rouge Script', cursive;
+}
+
+.about {
+    border-style: none;
+    background-color: rgba(0, 0, 0, 0.079);
+    color: rgb(6, 5, 5);
+}
+
+.choose {
+    background-color: rgba(0, 0, 0, 0.079);
+    width: 100vw;
+}
+
+.menu {
+    border-style: none;
+}
+
+.btn:hover {
+    background-color: rgb(16, 135, 190);
+}
+
+.ourmenu {
+    font-family: 'Rouge Script', cursive;
+    font-size: 4rem;
+    font-weight: bolder;
+}

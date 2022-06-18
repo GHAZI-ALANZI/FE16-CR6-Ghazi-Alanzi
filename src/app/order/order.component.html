@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="cart-item" *ngFor="let it of meal;index as i">
+        <h2>{{ it.name }}</h2>
+        <h4>The total Price:{{ it.price|currency:'EUR':true }} </h4>
+        <h4>The total Price:{{ it.price }} </h4>
+        <hr>
+    </div>
+    <button (click)="counter()"> The Amount:<span id="price"></span></button>
+    <hr>
+    <button> The Totat:<span ></span></button>
+
+
+
+    <form [formGroup]="checkoutForm">
+        <p>Please fill up the info for the delivery</p>
+        <hr>
+
+
+        <div>
+
+            <label for="name">Name </label>
+
+            <input id="name" type="text" class="form-control " formControlName="name">
+
+        </div>
+
+
+        <div>
+
+            <label for="address">Address</label>
+
+            <input id="address" type="text" class="form-control " formControlName="address">
+        </div>
+
+
+        <button class="button" type="submit">buy</button>

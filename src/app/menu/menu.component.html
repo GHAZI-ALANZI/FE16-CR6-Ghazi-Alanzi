@@ -1,0 +1,16 @@
+<div class="row gap-4 justify-content-center mb-4 mt-4 ">
+    <div class="card col-lg-3 col-md-4 col-sm-8 p-0 m-0 shadow" *ngFor="let dish of dishes ; index as x">
+        <img src="{{dish.img}}" class="card-img-top  d-md-block d-lg-block d-none " alt="...">
+        <div class="card-body p-0" *ngIf="dish.availability; else elseBlock">
+            <h4 class="card-title bg-dark text-light text-center">{{dish.name}}</h4>
+            <p>{{dish.description}}</p>
+            <hr>
+            <p>{{dish.price|currency:'EUR':true}}</p>
+            <hr>
+            <button type="button" class="btn  btn-info me-3 mb-3 ms-1" routerLink="/dishes/dish/{{x}}">Details</button>
+            <button type="button" class="btn  btn-success mb-3" routerLink="/dishes/dish/{{x}}">Order</button>
+
+        </div>
+    </div>
+</div>
+<ng-template #elseBlock>Not available</ng-template>
