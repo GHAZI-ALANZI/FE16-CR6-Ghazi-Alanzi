@@ -37,11 +37,11 @@ this.Counter++;
 
     total += val.price ;
 if(total<40){let v = total-total*0.1 ;
-(document.getElementById("total")as any).innerHTML = v + " €"+ " you have get 10% of the total amount" ;
+(document.getElementById("total")as any).innerHTML ="The Price:"+" "+ v + " €"+ " you have get 10% of the total amount" ;
   }else{
     let y = total-total*0.15 ;
     
-    (document.getElementById("total")as any).innerHTML = y + " €"+"   "+"price befor discount is:"+(y+total*0.15)+" €"+"   "+" you have get 15% of the total amount" ;
+    (document.getElementById("total")as any).innerHTML ="The Price:"+" "+ y + " €"+"   "+"price befor discount is:"+(y+total*0.15)+" €"+"   "+" you have get 15% of the total amount" ;
   }
 
 
