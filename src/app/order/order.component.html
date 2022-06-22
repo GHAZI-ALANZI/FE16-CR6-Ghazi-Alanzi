@@ -1,15 +1,15 @@
-<div class="container">
+<div class="container mt-5">
     <div class="cart-item" *ngFor="let it of meal;index as i">
         <h2>{{ it.name }}</h2>
-        <h4>The total Price:{{ it.price|currency:'EUR':true }} </h4>
-        <h4>The total Price:{{ it.price }} </h4>
+        <h4>The Price:{{ it.price|currency:'EUR':true }} </h4>
         <hr>
     </div>
-    <button (click)="counter()"> The Amount:<span id="price"></span></button>
+    <button class="btn btn-info mt-4" (click)="counter()"> Amount</button><br><span class="priceT">
+        </span>
     <hr>
-    <button> The Totat:<span ></span></button>
-
-
+    <button class="btn btn-info mt-5" (click)="getTotalPrice()"> Total</button><br><span id="total"></span>
+    <hr>
+    <h1 class="order"> Order Form</h1>
 
     <form [formGroup]="checkoutForm">
         <p>Please fill up the info for the delivery</p>
@@ -24,7 +24,6 @@
 
         </div>
 
-
         <div>
 
             <label for="address">Address</label>
@@ -33,4 +32,4 @@
         </div>
 
 
-        <button class="button" type="submit">buy</button>
+        <button class="btn btn-info mt-3 mb-5" type="submit">Purchase</button>

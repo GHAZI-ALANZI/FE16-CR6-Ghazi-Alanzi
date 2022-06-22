@@ -18,17 +18,17 @@ export class OrderComponent implements OnInit {
   // }
 
 
-
   checkoutForm = this.fb.group({
     name: '',
     address: '',
   });
   constructor( private mycartService: MycartService,private fb: FormBuilder) { }
   
-counter(){ return this.mycartService.count()
+counter(){ (document.querySelector(".priceT")as any).innerHTML= this.mycartService.count()
 }
 
-   
+getTotalPrice(){  return this.mycartService.totalPrice()
+   }
   
   ngOnInit(): void {   this.meal = this.mycartService.getItems();
 
